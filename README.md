@@ -7,23 +7,21 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 ## Getting Started:
 1. Crear anaconda environment
 
-.. code::
-
-	conda env create -f anaconda-LKE.yml
+	`conda env create -f anaconda-LKE.yml`
 
 2. Saving environment variables
 
 	Localizar el directorio en tu Anaconda Prompt corriendo en terminal:
 	
-	%CONDA_PREFIX%
+	`%CONDA_PREFIX%`
 	
 	Enter that directory and create these subdirectories and files:
 	
-	cd %CONDA_PREFIX%
-	mkdir .\etc\conda\activate.d
-	mkdir .\etc\conda\deactivate.d
-	type NUL > .\etc\conda\activate.d\env_vars.bat
-	type NUL > .\etc\conda\deactivate.d\env_vars.bat
+	`cd %CONDA_PREFIX%
+	`mkdir .\etc\conda\activate.d`
+	`mkdir .\etc\conda\deactivate.d`
+	`type NUL > .\etc\conda\activate.d\env_vars.bat`
+	`type NUL > .\etc\conda\deactivate.d\env_vars.bat`
 
 3. Edit .\etc\conda\activate.d\env_vars.bat as follows:
 
@@ -52,4 +50,9 @@ Mayor informacion sobre estas metricas puedes ser encontradas [aqui](https://med
 	make
 	cp -r pycocotools /media/gustavo/gusgus/Docs_tesis/LKE/tools/Tensorflow/research/models/research/
 
+
+
+## License
+
+The MIT License (MIT). Please see the [license file](LICENSE) for more information.
 
