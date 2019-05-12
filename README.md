@@ -9,13 +9,13 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 
 	`conda env create -f anaconda-LKE.yml`
 
-2. Saving environment variables
+2. Guardar variables entorno
 
 	Localizar el directorio en tu Anaconda Prompt corriendo en terminal:
 	
 	`%CONDA_PREFIX%`
 	
-	Enter that directory and create these subdirectories and files:
+Introduce ese directorio y crea los subdirectorios y archivos con:
 	
 	`cd %CONDA_PREFIX%
 	`mkdir .\etc\conda\activate.d`
@@ -23,33 +23,31 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	`type NUL > .\etc\conda\activate.d\env_vars.bat`
 	`type NUL > .\etc\conda\deactivate.d\env_vars.bat`
 
-3. Edit .\etc\conda\activate.d\env_vars.bat as follows:
+3. Editar .\etc\conda\activate.d\env_vars.bat de la siguiente forma:
 
 	export PYTHONPATH=$PYTHONPATH:`pwd`/tools/Tensorflow/research:`pwd`/tools/Tensorflow/research/slim
 
-4. Edit .\etc\conda\deactivate.d\env_vars.bat as follows:
+4. Editar .\etc\conda\deactivate.d\env_vars.bat de la siguiente forma:
 	
 	unset PYTHONPATH
 
-NOTA: When you run conda activate analytics, the environment variables MY_KEY and MY_FILE are set to the values you wrote into the file. When you run conda deactivate, those variables are erased.
+NOTA: 
+Cuando se active el entorno, las variables de entorno PYTHONPATH son cambiadas a los valores escritos dentro del archivo. Al desactivar el entorno, estos valores son borrados.
+
+# Compilar protobuf:
 
 
-#Compilar protobuf:
 
-
-
-#Instalar COCO API
+# Instalar COCO API
 
 COCO es una gran base de datos para deteccion y segmentacion de objetos, debido a que los ultimos papers de investigacion usan el dataset COCO, 
 asi como sus metricas para evaluar la precision (mAP), es necesario instalar su API. 
 Mayor informacion sobre estas metricas puedes ser encontradas [aqui](https://medium.com/@timothycarlen/understanding-the-map-evaluation-metric-for-object-detection-a07fe6962cf3)
 
-
 	git clone https://github.com/cocodataset/cocoapi.git
 	cd cocoapi/PythonAPI
 	make
 	cp -r pycocotools /media/gustavo/gusgus/Docs_tesis/LKE/tools/Tensorflow/research/models/research/
-
 
 
 ## License
