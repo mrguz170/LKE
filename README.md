@@ -16,12 +16,13 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	`%CONDA_PREFIX%`
 	
 	Introduce ese directorio y crea los subdirectorios y archivos con:
-	
-	`cd %CONDA_PREFIX%`
-	`mkdir .\etc\conda\activate.d`
-	`mkdir .\etc\conda\deactivate.d`
-	`type NUL > .\etc\conda\activate.d\env_vars.bat`
-	`type NUL > .\etc\conda\deactivate.d\env_vars.bat`
+	```
+	cd %CONDA_PREFIX%`
+	mkdir .\etc\conda\activate.d
+	mkdir .\etc\conda\deactivate.d
+	type NUL > .\etc\conda\activate.d\env_vars.bat
+	type NUL > .\etc\conda\deactivate.d\env_vars.bat
+	```
 
 3. Editar .\etc\conda\activate.d\env_vars.bat de la siguiente forma:
 
