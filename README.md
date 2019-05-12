@@ -6,7 +6,8 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 
 ## Getting Started:
 1. Crear anaconda environment
-	`conda env create -f anaconda-LKE.yml
+
+	'conda env create -f anaconda-LKE.yml'
 
 2. Saving environment variables
 
