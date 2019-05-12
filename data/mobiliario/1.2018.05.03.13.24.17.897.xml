@@ -1,0 +1,38 @@
+<annotation>
+	<folder>All images</folder>
+	<filename>1.2018.05.03.13.24.17.897.bmp</filename>
+	<path>/home/gustavo/Documentos/LKE_framework/data/classification/All images/1.2018.05.03.13.24.17.897.bmp</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>352</width>
+		<height>240</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>libre</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>155</xmin>
+			<ymin>67</ymin>
+			<xmax>235</xmax>
+			<ymax>112</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>libre</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>106</xmin>
+			<ymin>105</ymin>
+			<xmax>245</xmax>
+			<ymax>209</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,6 @@
+__pycache__/
+build/
+dist/
+object_detection.egg-info/
+pycocotools/
+cocoapi/

@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="prefijoNuevo">
+    <file>lke.png</file>
+  </qresource>
+</RCC>

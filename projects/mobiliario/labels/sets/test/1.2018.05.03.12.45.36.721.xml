@@ -1,0 +1,26 @@
+<annotation>
+	<folder>mobiliario</folder>
+	<filename>1.2018.05.03.12.45.36.721.bmp</filename>
+	<path>/home/gustavo/Documentos/framework/data/mobiliario/1.2018.05.03.12.45.36.721.bmp</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>352</width>
+		<height>240</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ocupado</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>248</xmin>
+			<ymin>18</ymin>
+			<xmax>348</xmax>
+			<ymax>102</ymax>
+		</bndbox>
+	</object>
+</annotation>
