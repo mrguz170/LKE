@@ -54,5 +54,5 @@ Mayor informacion sobre estas metricas puedes ser encontradas [aqui](https://med
 
 ## License
 
-The MIT License (MIT). Please see the [license file](LICENSE) for more information.
+The MIT License (MIT). Please see the [LICENSE](LICENSE) for more information.
 
