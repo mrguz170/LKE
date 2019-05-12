@@ -1,15 +1,20 @@
+# LKE Computer Vision Framework
 
-LINUX instalacion:
+Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
 
-#Crear anaconda environment
+![License](http://img.shields.io/:license-mit-blue.svg)
 
-##Creando entorno usando anaconda-LKE.yml, escribir en terminal:
+## Getting Started:
+1. Crear anaconda environment
+	`conda env create -f anaconda-LKE.yml
+
+2. Saving environment variables
+
+	Localizar el directorio en tu Anaconda Prompt corriendo en terminal:
 	
-	 conda env create -f anaconda-LKE.yml
-
-##Saving environment variables
-1. Locate the directory for the conda environment in your Anaconda Prompt by running in the command shell %CONDA_PREFIX%
-2. Enter that directory and create these subdirectories and files:
+	%CONDA_PREFIX%
+	
+	Enter that directory and create these subdirectories and files:
 	
 	cd %CONDA_PREFIX%
 	mkdir .\etc\conda\activate.d
