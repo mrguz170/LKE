@@ -24,13 +24,14 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	type NUL > .\etc\conda\deactivate.d\env_vars.bat
 	```
 
-3. Editar .\etc\conda\activate.d\env_vars.bat de la siguiente forma:
-
-	export PYTHONPATH=$PYTHONPATH:'pwd'/tools/Tensorflow/research:'pwd'/tools/Tensorflow/research/slim
-
+3. Editar .\etc\conda\activate.d\env_vars.bat, copia y pega la siguiente linea:
+	```
+	export PYTHONPATH=$PYTHONPATH:`pwd`/tools/Tensorflow/research:`pwd`/tools/Tensorflow/research/slim
+	```
 4. Editar .\etc\conda\deactivate.d\env_vars.bat de la siguiente forma:
-	
+	```
 	unset PYTHONPATH
+	```
 
 NOTA: 
 Cuando se active el entorno, las variables de entorno PYTHONPATH son cambiadas a los valores escritos dentro del archivo. Al desactivar el entorno, estos valores son borrados.
