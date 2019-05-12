@@ -15,7 +15,7 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	
 	`%CONDA_PREFIX%`
 	
-Introduce ese directorio y crea los subdirectorios y archivos con:
+	Introduce ese directorio y crea los subdirectorios y archivos con:
 	
 	`cd %CONDA_PREFIX%
 	`mkdir .\etc\conda\activate.d`
@@ -25,7 +25,7 @@ Introduce ese directorio y crea los subdirectorios y archivos con:
 
 3. Editar .\etc\conda\activate.d\env_vars.bat de la siguiente forma:
 
-	export PYTHONPATH=$PYTHONPATH:`pwd`/tools/Tensorflow/research:`pwd`/tools/Tensorflow/research/slim
+	export PYTHONPATH=$PYTHONPATH:'pwd'/tools/Tensorflow/research:'pwd'/tools/Tensorflow/research/slim
 
 4. Editar .\etc\conda\deactivate.d\env_vars.bat de la siguiente forma:
 	
