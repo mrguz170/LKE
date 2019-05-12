@@ -7,7 +7,7 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 ## Getting Started:
 1. Crear anaconda environment
 
-	'conda env create -f anaconda-LKE.yml'
+	conda env create -f anaconda-LKE.yml
 
 2. Saving environment variables
 
@@ -51,10 +51,3 @@ Mayor informacion sobre estas metricas puedes ser encontradas [aqui](https://med
 	cp -r pycocotools /media/gustavo/gusgus/Docs_tesis/LKE/tools/Tensorflow/research/models/research/
 
 
-
-
-
-----------------------------------------------------------
-
--instalar Protobuf (checar)
-conda install -c anaconda protobuf
