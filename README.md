@@ -35,14 +35,18 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	#### NOTA: 
 	Cuando se active el entorno, las variables de entorno PYTHONPATH son cambiadas a los valores escritos dentro del 	archivo. Al desactivar el entorno, estos valores son borrados.
 	
-5. Instalar Tensorflow, para una instalacion detallada seguir [Tensorflow instrucciones de instalacion](https://www.tensorflow.org/install/). Un usuario tipico puede instalar Tensorflow usando uno de los dos comandos siguientes:
+5. Instalar Tensorflow
 
-```
-# Por CPU
-pip install tensorflow
-# Por GPU
-pip install tensorflow-gpu
-```
+	Para una instalacion detallada seguir [Tensorflow instrucciones de instalacion](https://www.tensorflow.org/install/). 
+	Este sistema se creo usando la version 1.12, asi que se recomienda descargar tal version.
+	Un usuario tipico puede instalar Tensorflow usando uno de los dos comandos siguientes:
+
+	```
+	# Por CPU
+	pip install tensorflow==1.12
+	# Por GPU
+	pip install tensorflow-gpu==1.12
+	```
 
 
 
@@ -66,11 +70,11 @@ Ir a carpeta LKE/tools/Tensorflow/research, y corre:
 	cd cocoapi/PythonAPI
 	make
 
-al finalizar corre el siguiente comando, nota que debes cambiar <path-de-descarga> por el directorio donde se encuentra almacenado el repositorio:
+al finalizar corre el siguiente comando, nota que debes cambiar `<path-de-descarga>` por la ruta donde se encuentra almacenado el repositorio:
 
 	cp -r pycocotools <path-de-descarga>/LKE/tools/Tensorflow/research
 	
-	# ejemplo:
+	#ejemplo:
 	cp -r pycocotools /media/gustavo/gusgus/Machinelearning/LKE/tools/Tensorflow/research
 	
 	
