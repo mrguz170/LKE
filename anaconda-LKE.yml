@@ -1,4 +1,4 @@
-name: LKE
+name: LKE-CVF
 channels:
   - defaults
 dependencies:
