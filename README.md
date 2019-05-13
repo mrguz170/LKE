@@ -37,7 +37,7 @@ NOTA:
 Cuando se active el entorno, las variables de entorno PYTHONPATH son cambiadas a los valores escritos dentro del archivo. Al desactivar el entorno, estos valores son borrados.
 
 ## Requirements
-- [Anaconda / Python 3.5](https://www.continuum.io/downloads)
+- [Anaconda / Python 3.5](https://www.anaconda.com/distribution/)
 - [TensorFlow 1.12](https://www.tensorflow.org/)
 - [OpenCV 3.0](http://opencv.org/)
 
