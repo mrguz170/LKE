@@ -26,19 +26,25 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 
 3. Editar ./etc/conda/activate.d/env_vars.sh, copia y pega la siguiente linea:
 	```
-	#!/bin/sh
-	
 	export PYTHONPATH=$PYTHONPATH:`pwd`/tools/Tensorflow/research:`pwd`/tools/Tensorflow/research/slim
 	```
 4. Editar .\etc\conda\deactivate.d\env_vars.bat, copia y pega la siguiente linea:
 	```
-	#!/bin/sh
-	
 	unset PYTHONPATH
 	```
+	#### NOTA: 
+	Cuando se active el entorno, las variables de entorno PYTHONPATH son cambiadas a los valores escritos dentro del 	archivo. Al desactivar el entorno, estos valores son borrados.
+	
+5. Instalar Tensorflow, para una instalacion detallada seguir [Tensorflow instrucciones de instalacion](https://www.tensorflow.org/install/). Un usuario tipico puede instalar Tensorflow usando uno de los dos comandos siguientes:
 
-NOTA: 
-Cuando se active el entorno, las variables de entorno PYTHONPATH son cambiadas a los valores escritos dentro del archivo. Al desactivar el entorno, estos valores son borrados.
+```
+# Por CPU
+pip install tensorflow
+# Por GPU
+pip install tensorflow-gpu
+```
+
+
 
 ## Requirements
 - [Anaconda / Python 3.5](https://www.anaconda.com/distribution/)
