@@ -56,7 +56,7 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	
 6. Re-compilar labelImg tool
 
-	Para el etiquetado de las imagenes el sistema usa esta conocida [herramienta](https://github.com/tzutalin/labelImg) de etiquetado manual. Antes de comenzar es necesario recompilar sus archivos. Escribe en el directorio raiz LKE:
+	Para el etiquetado de las imagenes el sistema utiliza una herramienta llamada [labelImg](https://github.com/tzutalin/labelImg). Antes de comenzar es necesario recompilar sus archivos. Escribe en el directorio raiz del proyecto:
 	```
 	make -C `pwd`/tools/labelImg qt5py3
 	```
@@ -69,13 +69,12 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 
 
 
-
-
 ## Instalar COCO API
 
 COCO es una gran base de datos para deteccion y segmentacion de objetos, debido a que los ultimos papers de investigacion usan el dataset COCO, 
 asi como sus metricas para evaluar la precision (mAP), es necesario instalar su API. 
-Mayor informacion sobre estas metricas puedes ser encontradas [aqui](https://medium.com/@timothycarlen/understanding-the-map-evaluation-metric-for-object-detection-a07fe6962cf3)
+Mayor informacion sobre estas metricas puedes ser encontradas [aqui](https://medium.com/@timothycarlen/understanding-the-map-evaluation-metric-for-object-detection-a07fe6962cf3).
+
 Ir a carpeta LKE/tools/Tensorflow/research, y corre:
 
 	git clone https://github.com/cocodataset/cocoapi.git
@@ -90,7 +89,6 @@ al finalizar corre el siguiente comando, nota que debes cambiar `<path-de-descar
 	cp -r pycocotools /media/gustavo/gusgus/Machinelearning/LKE/tools/Tensorflow/research
 	
 	
-
 
 ## Licencia
 
