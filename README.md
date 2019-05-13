@@ -5,9 +5,12 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 ![License](http://img.shields.io/:license-mit-blue.svg)
 
 ## Comenzar:
-1. Crear anaconda environment
+1. Crear entorno de anaconda: 
 
 	`conda env create -f anaconda-LKE.yml`
+	
+	#### NOTA: 
+	Si no existe Anaconda instalado en tu equipo, puedes descargarlo desde [aqui](https://www.anaconda.com/distribution/), 
 
 2. Guardar variables entorno
 
@@ -47,15 +50,24 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	# Por GPU
 	pip install tensorflow-gpu==1.12
 	```
+	
+	#### NOTA:
+	La instalacion usando CPU requiere la activacion de los nucleos CUDA de la tarjeta, [aqui](https://medium.com/@zhanwenchen/install-cuda-and-cudnn-for-tensorflow-gpu-on-ubuntu-79306e4ac04e) una guia al respecto.
+	
+6. Re-compilar labelImg tool
 
+	Para el etiquetado de las imagenes el sistema usa esta conocida [herramienta](https://github.com/tzutalin/labelImg) de etiquetado manual. Antes de comenzar es necesario recompilar sus archivos. Escribe en el directorio raiz LKE:
+	```
+	make -C `pwd`/tools/labelImg qt5py3
+	```
 
 
 ## Requirements
-- [Anaconda / Python 3.5](https://www.anaconda.com/distribution/)
+- [Anaconda / Python 3.5](https://www.anaconda.com/)
 - [TensorFlow 1.12](https://www.tensorflow.org/)
 - [OpenCV 3.0](http://opencv.org/)
 
-## Compilar protobuf:
+
 
 
 
