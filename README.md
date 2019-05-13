@@ -54,11 +54,20 @@ Cuando se active el entorno, las variables de entorno PYTHONPATH son cambiadas a
 COCO es una gran base de datos para deteccion y segmentacion de objetos, debido a que los ultimos papers de investigacion usan el dataset COCO, 
 asi como sus metricas para evaluar la precision (mAP), es necesario instalar su API. 
 Mayor informacion sobre estas metricas puedes ser encontradas [aqui](https://medium.com/@timothycarlen/understanding-the-map-evaluation-metric-for-object-detection-a07fe6962cf3)
+Ir a carpeta LKE/tools/Tensorflow/research, y corre:
 
 	git clone https://github.com/cocodataset/cocoapi.git
 	cd cocoapi/PythonAPI
 	make
-	cp -r pycocotools /media/gustavo/gusgus/Docs_tesis/LKE/tools/Tensorflow/research/models/research/
+
+al finalizar corre el siguiente comando, nota que debes cambiar <path-de-descarga> por el directorio donde se encuentra almacenado el repositorio:
+
+	cp -r pycocotools <path-de-descarga>/LKE/tools/Tensorflow/research
+	
+### ejemplo:
+	cp -r pycocotools /media/gustavo/gusgus/Machinelearning/LKE/tools/Tensorflow/research
+	
+	
 
 
 ## Licencia
