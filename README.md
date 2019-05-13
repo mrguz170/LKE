@@ -52,7 +52,7 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	```
 	
 	#### NOTA:
-	La instalacion usando CPU requiere la activacion de los nucleos CUDA de la tarjeta, [aqui](https://medium.com/@zhanwenchen/install-cuda-and-cudnn-for-tensorflow-gpu-on-ubuntu-79306e4ac04e) una guia al respecto.
+	La instalacion usando GPU requiere la activacion de los nucleos CUDA de la tarjeta, [aqui](https://medium.com/@zhanwenchen/install-cuda-and-cudnn-for-tensorflow-gpu-on-ubuntu-79306e4ac04e) una guia al respecto.
 	
 6. Re-compilar labelImg tool
 
