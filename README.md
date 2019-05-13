@@ -13,23 +13,27 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 
 	Localizar el directorio en tu Anaconda Prompt corriendo en terminal:
 	
-	`%CONDA_PREFIX%`
+	`echo $CONDA_PREFIX`
 	
 	Introduce ese directorio y crea los subdirectorios y archivos con:
 	```
-	cd %CONDA_PREFIX%`
-	mkdir .\etc\conda\activate.d
-	mkdir .\etc\conda\deactivate.d
-	type NUL > .\etc\conda\activate.d\env_vars.bat
-	type NUL > .\etc\conda\deactivate.d\env_vars.bat
+	cd $CONDA_PREFIX
+	mkdir -p ./etc/conda/activate.d
+	mkdir -p ./etc/conda/deactivate.d
+	touch ./etc/conda/activate.d/env_vars.sh
+	touch ./etc/conda/deactivate.d/env_vars.sh
 	```
 
-3. Editar .\etc\conda\activate.d\env_vars.bat, copia y pega la siguiente linea:
+3. Editar ./etc/conda/activate.d/env_vars.sh, copia y pega la siguiente linea:
 	```
+	#!/bin/sh
+	
 	export PYTHONPATH=$PYTHONPATH:`pwd`/tools/Tensorflow/research:`pwd`/tools/Tensorflow/research/slim
 	```
 4. Editar .\etc\conda\deactivate.d\env_vars.bat, copia y pega la siguiente linea:
 	```
+	#!/bin/sh
+	
 	unset PYTHONPATH
 	```
 
