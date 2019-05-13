@@ -36,11 +36,16 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 NOTA: 
 Cuando se active el entorno, las variables de entorno PYTHONPATH son cambiadas a los valores escritos dentro del archivo. Al desactivar el entorno, estos valores son borrados.
 
-# Compilar protobuf:
+## Requirements
+- [Anaconda / Python 3.5](https://www.continuum.io/downloads)
+- [TensorFlow 1.12](https://www.tensorflow.org/)
+- [OpenCV 3.0](http://opencv.org/)
+
+## Compilar protobuf:
 
 
 
-# Instalar COCO API
+## Instalar COCO API
 
 COCO es una gran base de datos para deteccion y segmentacion de objetos, debido a que los ultimos papers de investigacion usan el dataset COCO, 
 asi como sus metricas para evaluar la precision (mAP), es necesario instalar su API. 
