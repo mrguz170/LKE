@@ -93,7 +93,7 @@
          </font>
         </property>
         <property name="currentIndex">
-         <number>3</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="tab">
          <attribute name="title">
@@ -120,15 +120,15 @@
                 <enum>QFrame::Plain</enum>
                </property>
                <property name="currentIndex">
-                <number>1</number>
+                <number>0</number>
                </property>
                <widget class="QWidget" name="page_8">
                 <property name="geometry">
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>1306</width>
-                  <height>608</height>
+                  <width>1195</width>
+                  <height>633</height>
                  </rect>
                 </property>
                 <attribute name="label">
@@ -363,8 +363,8 @@
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>1095</width>
-                  <height>647</height>
+                  <width>1046</width>
+                  <height>569</height>
                  </rect>
                 </property>
                 <attribute name="label">
@@ -991,15 +991,15 @@
           <item row="0" column="0">
            <widget class="QToolBox" name="toolBox_3">
             <property name="currentIndex">
-             <number>1</number>
+             <number>0</number>
             </property>
             <widget class="QWidget" name="page_3">
              <property name="geometry">
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>88</width>
-               <height>88</height>
+               <width>1115</width>
+               <height>667</height>
               </rect>
              </property>
              <attribute name="label">
@@ -1016,8 +1016,8 @@
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1021</width>
-                   <height>578</height>
+                   <width>1095</width>
+                   <height>647</height>
                   </rect>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_49">

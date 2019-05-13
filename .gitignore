@@ -4,3 +4,5 @@ dist/
 object_detection.egg-info/
 pycocotools/
 cocoapi/
+test3/
+models/ssd_mobilenet_v2_coco_2018_03_29/

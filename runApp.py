@@ -730,7 +730,6 @@ class mainApp(QtWidgets.QMainWindow):
         """
         if(str(self.ui.lineE3_1.text()) != ''):
             try:
-
                 self.ui.buttonTRAIN.setEnabled(0)
                 self.thread.nameP = self.nameProject          #pasar nombre de proyecto a hilo 1
                 self.thread.fileCfg = self.ui.lineE3_1.text() #pasar file config a hilo 1
@@ -758,9 +757,7 @@ class mainApp(QtWidgets.QMainWindow):
                 print("Hilo activado y listo para detener")
                 self.ui.buttonTRAIN.setEnabled(1)
                 self.ui.textEdit_3.insertPlainText("------------ Training STOP ---------------")
-                os.killpg(os.getpgid(self.thread.p.pid), signal.SIGTERM)
-                #self.thread.p.send_signal(signal.CTRL_BREAK_EVENT)
-                #self.thread.p.kill()
+                os.killpg(os.getpgid(self.thread.p.pid), signal.SIGKILL)
                 self.thread.terminate()
 
             else:
@@ -800,24 +797,6 @@ class mainApp(QtWidgets.QMainWindow):
         else:
             print("Hilo activado y listo para detener")
             self.thread2.terminate()
-    
-
-    def stopTB1(self):
-        """
-        Detener hilo2 (TENSOBOARD)
-        :return:
-        """
-        try:
-            
-            if self.thread2.isRunning():
-                print("Hilo activado y listo para detener")
-                os.killpg(os.getpgid(self.thread2.p.pid), signal.SIGTERM)
-                self.thread2.terminate()
-            else:
-                print("Hilo inactivo")
-                
-        except Exception as e:
-            raise e
         
 
 
@@ -832,17 +811,14 @@ class mainApp(QtWidgets.QMainWindow):
         try:
             arg1 = 'python'
             arg2 = 'main.py'
-            #arg3 = 'tensorboard.main'
             arg3 = '--logdir={}'.format(os.path.join(os.getcwd(), "projects/{}/training/".format(self.nameProject)))
             
             self.thread2.port = str(self.ui.spinBport.value())
             arg4 = '--port={}'.format(self.ui.spinBport.value())
 
             #modificamos las variables dentro del hilo para que tome esos valores
-            # al momento de correr tensorboard
+            #al momento de correr tensorboard
 
-            #self.thread2.list = arg1 + ' ' + arg2 + ' ' + arg3 + ' ' + arg4
-            #print('Comando completo:' + self.thread2.list)
             self.thread2.list = [arg1, arg2, arg3, arg4]
             self.thread2.dir =str(os.path.dirname(inspect.getfile(tb)))
 
@@ -851,36 +827,6 @@ class mainApp(QtWidgets.QMainWindow):
         except Exception as e:
             raise e
             
-                   
-
-    def verGraficas2(self):
-        """
-        Cargamos graficas usando TENSORBOPARD
-        :return:
-        """
-        if self.thread2.isRunning():
-            print("puerto {} aun activo".format(self.thread2.port))
-        else:
-            #arg1 = str(os.environ['ENV1'])      #'/home/gustavo/anaconda3/envs/tfgpu/bin/python'
-            arg1 = 'python'
-            arg2 = 'main.py'
-            arg3 = '--logdir={}'.format(os.path.join(os.getcwd(), "projects/{}/training/".format(self.nameProject)))
-
-            self.thread2.port = str(self.ui.spinBport.value())
-            arg4 = '--port={}'.format(self.thread2.port)
-
-            #modificamos las variables dentro del hilo para que tome esos valores
-            # al momento de correr tensorboard
-            self.thread2.list = [arg1, arg2, arg3, arg4]
-            self.thread2.dir = str(os.environ['TENSORBOARD'])   #'/home/gustavo/anaconda3/envs/tfgpu/lib/python3.5/site-packages/tensorboard/'
-            
-            try:
-                self.thread2.start()
-            except Exception as ex:
-                print(ex)
-                print('Error al ver las graficas ')
-
-
 
 #------------------------------------    TESTING parte 2   ----------------------------------------
     def abrirArchivo(self):
@@ -962,8 +908,6 @@ class mainApp(QtWidgets.QMainWindow):
                     if (self.ui.rb_imagen.isChecked()):
                         if(os.path.exists(self.ui.lineEpathvideo.text())):
 
-                            #mydir = OBJECTDETECTIONPATH
-                            #arg1 = str(os.environ['ENV1'])
                             arg1 = 'python'
                             arg2 = 'object_detection_test.py'
                             arg3 = '--image_dir={}'.format(self.ui.lineEpathvideo.text())
@@ -983,8 +927,6 @@ class mainApp(QtWidgets.QMainWindow):
 
                         if (os.path.exists(self.ui.lineEpathvideo.text())):
 
-                            #mydir = OBJECTDETECTIONPATH
-                            #arg1 = str(os.environ['ENV1'])
                             arg1 = 'python'
                             arg2 = 'object_detection_test_video.py'
                             arg3 = '--image_dir={}'.format(self.ui.lineEpathvideo.text())
@@ -1103,7 +1045,6 @@ class mainApp(QtWidgets.QMainWindow):
                         b = self._validarCheckpoint(num_check)
 
 
-                #arg1 = str(os.environ['ENV1'])      #'/home/gustavo/anaconda3/envs/tfgpu/bin/python3'
                 arg1 = 'python'
                 arg2 = 'export_inference_graph.py'
                 arg3 = '--input_type image_tensor'
@@ -1123,7 +1064,7 @@ class mainApp(QtWidgets.QMainWindow):
                     path = os.path.join(os.getcwd(), 'projects/{}/training/{}'.format(
                     													self.nameProject, self.exportfiles))
                     
-                    command = arg1 + ' ' + OBJECTDETECTIONPATH + arg2 + ' ' + arg3 + ' ' + arg4 + ' ' + arg5 + ' ' + arg6
+                    command = arg1 + ' ' + OBJECTDETECTIONPATH + '/' + arg2 + ' ' + arg3 + ' ' + arg4 + ' ' + arg5 + ' ' + arg6
 
                     self.statusBar().showMessage('Checkpoint valido')
                     self._exportar(path, command)
@@ -1205,7 +1146,6 @@ class mainApp(QtWidgets.QMainWindow):
 
 
     
-
 #  -------------------------    THREADS for DOWNLOAD MODEL  ----------------------------------
 # ------------------------------------------------------------------------------------------
 class hilo3(QtCore.QThread):
@@ -1390,7 +1330,6 @@ class hilo(QThread):
 
 # ---------------------  	MAIN      -------------------------------
 # --------------------------------------------------------------------
-
 if __name__ == "__main__":
     multiprocessing.freeze_support()
     app = QtWidgets.QApplication([])
