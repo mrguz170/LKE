@@ -68,7 +68,6 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 - [OpenCV 3.0](http://opencv.org/)
 
 
-
 ## Instalar COCO API
 
 COCO es una gran base de datos para deteccion y segmentacion de objetos, debido a que los ultimos papers de investigacion usan el dataset COCO, 
