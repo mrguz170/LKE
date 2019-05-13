@@ -62,7 +62,7 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	```
 
 
-## Requirements
+## Requerimientos
 - [Anaconda / Python 3.5](https://www.anaconda.com/)
 - [TensorFlow 1.12](https://www.tensorflow.org/)
 - [OpenCV 3.0](http://opencv.org/)
