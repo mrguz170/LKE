@@ -4,7 +4,7 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 
 ![License](http://img.shields.io/:license-mit-blue.svg)
 
-## Getting Started:
+## Comenzar:
 1. Crear anaconda environment
 
 	`conda env create -f anaconda-LKE.yml`
@@ -52,7 +52,7 @@ Mayor informacion sobre estas metricas puedes ser encontradas [aqui](https://med
 	cp -r pycocotools /media/gustavo/gusgus/Docs_tesis/LKE/tools/Tensorflow/research/models/research/
 
 
-## License
+## Licencia
 
-The MIT License (MIT). Please see the [LICENSE](LICENSE) for more information.
+The MIT License (MIT). Please see the [LICENSE](https://github.com/mrguz170/LKE/blob/master/LICENSE.md) for more information.
 
