@@ -10,9 +10,9 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	`conda env create -f anaconda-LKE.yml`
 	
 	#### NOTA: 
-	Si no existe Anaconda instalado en tu equipo, puedes descargarlo desde [aqui](https://www.anaconda.com/distribution/), 
+	Si no existe Anaconda instalado en tu equipo, puedes descargarlo desde [aqui](https://www.anaconda.com/distribution/).
 
-2. Guardar variables entorno
+2. Editar y Guardar variables de entorno.
 
 	Localizar el directorio en tu Anaconda Prompt corriendo en terminal:
 	
@@ -36,11 +36,11 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	unset PYTHONPATH
 	```
 	#### NOTA: 
-	Cuando se active el entorno, las variables de entorno PYTHONPATH son cambiadas a los valores escritos dentro del 	archivo. Al desactivar el entorno, estos valores son borrados.
+	Cuando se active el entorno, la variable de entorno PYTHONPATH es cambiada al valor escrito dentro del archivo. Al desactivar el entorno, toda variable es eliminada.
 	
 5. Instalar Tensorflow
 
-	Para una instalacion detallada seguir [Tensorflow instrucciones de instalacion](https://www.tensorflow.org/install/). 
+	Para una instalacion detallada seguir las [instrucciones de instalacion](https://www.tensorflow.org/install/) oficial. 
 	Este sistema se creo usando la version 1.12, asi que se recomienda descargar tal version.
 	Un usuario tipico puede instalar Tensorflow usando uno de los dos comandos siguientes:
 
