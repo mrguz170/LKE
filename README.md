@@ -70,7 +70,7 @@ al finalizar corre el siguiente comando, nota que debes cambiar <path-de-descarg
 
 	cp -r pycocotools <path-de-descarga>/LKE/tools/Tensorflow/research
 	
-### ejemplo:
+	# ejemplo:
 	cp -r pycocotools /media/gustavo/gusgus/Machinelearning/LKE/tools/Tensorflow/research
 	
 	
