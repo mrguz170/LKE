@@ -28,7 +28,7 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	```
 	export PYTHONPATH=$PYTHONPATH:`pwd`/tools/Tensorflow/research:`pwd`/tools/Tensorflow/research/slim
 	```
-4. Editar .\etc\conda\deactivate.d\env_vars.bat de la siguiente forma:
+4. Editar .\etc\conda\deactivate.d\env_vars.bat, copia y pega la siguiente linea:
 	```
 	unset PYTHONPATH
 	```
