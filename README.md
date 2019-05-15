@@ -2,6 +2,7 @@
 
 Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's TensorFlow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection)
 
+![Py versions](https://img.shields.io/pypi/pyversions/donkeycar.svg)
 ![License](http://img.shields.io/:license-mit-blue.svg)
 
 ## Comenzar:
