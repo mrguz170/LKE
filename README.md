@@ -5,9 +5,9 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 ![Py versions](https://img.shields.io/pypi/pyversions/donkeycar.svg)
 ![License](http://img.shields.io/:license-mit-blue.svg)
 
-![LKE](https://sigmoidal.io/wp-content/uploads/2017/11/object_detection_using_faster_rcnn.png)
-![LKE](https://camo.githubusercontent.com/7be7005a5bd74bb4bbb6058be5706870053a2a1e/68747470733a2f2f692e696d6775722e636f6d2f366f6b65446a7a2e6a7067)
 
+![LKE](https://camo.githubusercontent.com/7be7005a5bd74bb4bbb6058be5706870053a2a1e/68747470733a2f2f692e696d6775722e636f6d2f366f6b65446a7a2e6a7067)
+![LKE](https://sigmoidal.io/wp-content/uploads/2017/11/object_detection_using_faster_rcnn.png)
 
 
 ## Comenzar:
