@@ -88,9 +88,11 @@ al finalizar corre el siguiente comando, nota que debes cambiar `<path-de-descar
 	#ejemplo:
 	cp -r pycocotools /media/gustavo/gusgus/Machinelearning/LKE/tools/Tensorflow/research
 	
-	
+## Guia de uso
+
+Proporcionamos una [guia](https://docs.google.com/document/d/1CrtmGBZoLcD9aYmGgZjE_WwnHVdBgeOBcgIQe0GvO1s/edit?usp=sharing) para que puedas entrenar tus propios modelos.
 
 ## Licencia
 
-The MIT License (MIT). Please see the [LICENSE](https://github.com/mrguz170/LKE/blob/master/LICENSE.md) for more information.
+The MIT License (MIT). Porfavor ir a [LICENSE](https://github.com/mrguz170/LKE/blob/master/LICENSE.md) para más información.
 
