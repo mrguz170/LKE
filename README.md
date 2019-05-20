@@ -93,6 +93,12 @@ al finalizar corre el siguiente comando, nota que debes cambiar `<path-de-descar
 	
 	#ejemplo:
 	cp -r pycocotools /media/gustavo/Machinelearning/LKE/tools/Tensorflow/research
+
+## Iniciar aplicación
+
+En el directorio raíz escribe:
+
+    python runApp.py 
 	
 ## Guia de uso
 
