@@ -9,7 +9,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1157</width>
+    <width>1262</width>
     <height>936</height>
    </rect>
   </property>
@@ -127,8 +127,8 @@
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>1195</width>
-                  <height>633</height>
+                  <width>1200</width>
+                  <height>647</height>
                  </rect>
                 </property>
                 <attribute name="label">
@@ -181,7 +181,7 @@
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>1095</width>
+                  <width>1200</width>
                   <height>647</height>
                  </rect>
                 </property>
@@ -363,7 +363,7 @@
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>1095</width>
+                  <width>1200</width>
                   <height>647</height>
                  </rect>
                 </property>
@@ -991,7 +991,7 @@
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>1115</width>
+               <width>1220</width>
                <height>667</height>
               </rect>
              </property>
@@ -1009,7 +1009,7 @@
                   <rect>
                    <x>0</x>
                    <y>0</y>
-                   <width>1095</width>
+                   <width>1200</width>
                    <height>647</height>
                   </rect>
                  </property>
@@ -2212,7 +2212,7 @@ p, li { white-space: pre-wrap; }
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>1093</width>
+                  <width>1198</width>
                   <height>651</height>
                  </rect>
                 </property>
@@ -2997,7 +2997,7 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1157</width>
+     <width>1262</width>
      <height>20</height>
     </rect>
    </property>
