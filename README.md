@@ -94,15 +94,18 @@ al finalizar corre el siguiente comando, nota que debes cambiar `<path-de-descar
 	#ejemplo:
 	cp -r pycocotools /media/gustavo/Machinelearning/LKE/tools/Tensorflow/research
 
+
 ## Iniciar aplicación
 
 En el directorio raíz escribe:
 
     python runApp.py 
 	
+
 ## Guia de uso
 
 Proporcionamos una [guia](https://docs.google.com/document/d/1CrtmGBZoLcD9aYmGgZjE_WwnHVdBgeOBcgIQe0GvO1s/edit?usp=sharing) para que puedas entrenar tus propios modelos.
+
 
 ## Licencia
 
