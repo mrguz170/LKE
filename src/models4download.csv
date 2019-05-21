@@ -18,13 +18,13 @@ faster_rcnn_resnet101_coco.config, http://download.tensorflow.org/models/object_
 faster_rcnn_resnet101_fgvc.config, http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_fgvc_2018_07_19.tar.gz
 faster_rcnn_resnet101_kitti.config, http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_kitti_2018_01_28.tar.gz
 faster_rcnn_resnet101_pets.config, http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_2018_01_28.tar.gz
---faster_rcnn_resnet101_voc07.config,
+--faster_rcnn_resnet101_voc07.config, 
 --faster_rcnn_resnet152_coco.config,
 --faster_rcnn_resnet152_pets.config,
-mask_rcnn_inception_resnet_v2_atrous_coco.config, http://download.tensorflow.org/models/object_detection/mask_rcnn_inception_resnet_v2_atrous_coco_2018_01_28.tar.gz
-mask_rcnn_inception_v2_coco.config, http://download.tensorflow.org/models/object_detection/mask_rcnn_inception_v2_coco_2018_01_28.tar.gz
-mask_rcnn_resnet50_atrous_coco.config, http://download.tensorflow.org/models/object_detection/mask_rcnn_resnet50_atrous_coco_2018_01_28.tar.gz
-mask_rcnn_resnet101_atrous_coco.config, http://download.tensorflow.org/models/object_detection/mask_rcnn_resnet101_atrous_coco_2018_01_28.tar.gz
+--mask_rcnn_inception_resnet_v2_atrous_coco.config, http://download.tensorflow.org/models/object_detection/mask_rcnn_inception_resnet_v2_atrous_coco_2018_01_28.tar.gz
+--mask_rcnn_inception_v2_coco.config, http://download.tensorflow.org/models/object_detection/mask_rcnn_inception_v2_coco_2018_01_28.tar.gz
+--mask_rcnn_resnet50_atrous_coco.config, http://download.tensorflow.org/models/object_detection/mask_rcnn_resnet50_atrous_coco_2018_01_28.tar.gz
+--mask_rcnn_resnet101_atrous_coco.config, http://download.tensorflow.org/models/object_detection/mask_rcnn_resnet101_atrous_coco_2018_01_28.tar.gz
 --mask_rcnn_resnet101_pets.config,
 rfcn_resnet101_coco.config, http://download.tensorflow.org/models/object_detection/rfcn_resnet101_coco_2018_01_28.tar.gz
 rfcn_resnet101_pets.config, http://download.tensorflow.org/models/object_detection/rfcn_resnet101_coco_2018_01_28.tar.gz
