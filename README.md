@@ -22,7 +22,7 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 
 	`conda env create -f anaconda-LKE.yml`
 	
-	Al finalizar escribe `conda activate LKE-CVF` para activar el entorno.
+	Al finalizar escribe `conda activate LKE` para activar el entorno.
 	
 	#### NOTA: Si no existe Anaconda instalado en tu equipo, puedes descargarlo desde [aqui](https://www.anaconda.com/distribution/).
 	
