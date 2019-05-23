@@ -11,19 +11,22 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 
 # Instalación en LINUX:
 
+## Requerimientos
+- [Anaconda / Python 3.5](https://www.anaconda.com/)
+- [TensorFlow 1.12](https://www.tensorflow.org/)
+- [OpenCV 3.0](http://opencv.org/)
+
+
 ## Comenzar:
 1. Crear entorno de anaconda: 
 
 	`conda env create -f anaconda-LKE.yml`
 	
-	Al finalizar para activar el entorno escribe:
-	
-	`conda activate LKE-CVF`
+	Al finalizar escribe `conda activate LKE-CVF` para activar el entorno.
 	
 	#### NOTA: 
 	Si no existe Anaconda instalado en tu equipo, puedes descargarlo desde [aqui](https://www.anaconda.com/distribution/).
 	
-
 
 2. Editar y Guardar variables de entorno.
 
@@ -39,17 +42,20 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	touch ./etc/conda/activate.d/env_vars.sh
 	touch ./etc/conda/deactivate.d/env_vars.sh
 	```
-
-3. Editar ./etc/conda/activate.d/env_vars.sh, copia y pega la siguiente linea:
+	
+	Una vez creado estos dos archivos es necesario editarlos
+	
+3. Ir a ./etc/conda/activate.d/env_vars.sh, abrir, copia y pega la siguiente linea:
 	```
 	export PYTHONPATH=$PYTHONPATH:`pwd`/tools/Tensorflow/research:`pwd`/tools/Tensorflow/research/slim
 	```
-4. Editar ./etc/conda/deactivate.d/env_vars.bat, copia y pega la siguiente linea:
+	
+4. Ir a ./etc/conda/deactivate.d/env_vars.sh, abrir, copia y pega la siguiente linea:
 	```
 	unset PYTHONPATH
 	```
 	#### NOTA: 
-	Cuando se active el entorno, la variable de entorno PYTHONPATH es cambiada al valor escrito dentro del archivo. Al desactivar el entorno, toda variable es eliminada.
+	Cuando se active el entorno, la variable PYTHONPATH es cambiada al valor escrito dentro del archivo. Al desactivar el entorno, toda variable es eliminada. 
 	
 5. Instalar Tensorflow
 
@@ -74,13 +80,6 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	make -C `pwd`/tools/labelImg qt5py3
 	```
 
-
-## Requerimientos
-- [Anaconda / Python 3.5](https://www.anaconda.com/)
-- [TensorFlow 1.12](https://www.tensorflow.org/)
-- [OpenCV 3.0](http://opencv.org/)
-
-
 ## Instalar COCO API
 
 COCO es una gran base de datos para deteccion y segmentacion de objetos, debido a que los ultimos papers de investigacion usan el dataset COCO, 
@@ -93,12 +92,14 @@ Ir a carpeta LKE/tools/Tensorflow/research, y corre:
 	cd cocoapi/PythonAPI
 	make
 
-al finalizar corre el siguiente comando, nota que debes cambiar `<path-de-descarga>` por la ruta donde se encuentra almacenado el repositorio:
+al finalizar corre el siguiente comando:
 
 	cp -r pycocotools <path-de-descarga>/LKE/tools/Tensorflow/research
-	
+
+nota que debes cambiar `<path-de-descarga>` por la ruta donde almacenaste el proyecto, por ejemplo:
+
 	#ejemplo:
-	cp -r pycocotools /media/gustavo/Machinelearning/LKE/tools/Tensorflow/research
+	cp -r pycocotools /home/gustavo/Documentos/LKE/tools/Tensorflow/research
 
 
 ## Iniciar aplicación
