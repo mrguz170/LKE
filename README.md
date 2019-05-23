@@ -16,7 +16,6 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 - [TensorFlow 1.12](https://www.tensorflow.org/)
 - [OpenCV 3.0](http://opencv.org/)
 
-
 ## Comenzar:
 1. Crear entorno de anaconda: 
 
@@ -25,7 +24,6 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	Al finalizar escribe `conda activate LKE` para activar el entorno.
 	
 	#### NOTA: Si no existe Anaconda instalado en tu equipo, puedes descargarlo desde [aqui](https://www.anaconda.com/distribution/).
-	
 
 2. Editar y Guardar variables de entorno.
 
@@ -41,7 +39,6 @@ Sistema de escritorio para el entrenamiento de redes neuronales usando [Google's
 	touch ./etc/conda/activate.d/env_vars.sh
 	touch ./etc/conda/deactivate.d/env_vars.sh
 	```
-	
 	Una vez creado estos dos archivos es necesario editarlos
 	
 3. Ir a ./etc/conda/activate.d/env_vars.sh, abrir, copia y pega la siguiente linea:
@@ -107,7 +104,7 @@ En el directorio raíz escribe:
 
     python runApp.py 
 	
-
+	
 ## Guia de uso
 
 Proporcionamos una [guia](https://docs.google.com/document/d/1CrtmGBZoLcD9aYmGgZjE_WwnHVdBgeOBcgIQe0GvO1s/edit?usp=sharing) para que puedas entrenar tus propios modelos.
